@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  /* transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1); */
+  color: #fff;
+  word-spacing: 1px;
+  /* -webkit-backface-visibility: hidden; */
+}
+
+.overflow {
+  overflow: hidden;
+  background-color: #1b1f23;
+}
+img {
+  box-sizing: border-box;
+}
+h3 {
+  font-size: 16px;
+  margin: 15px 0;
+}
+p {
+  font-size: 16px;
+  line-height: initial;
+}
+.text {
+  font-weight: bold;
+}
+.small {
+  font-size: 13px;
+}
+.large {
+  font-size: 70px;
+}
+.white {
+  color: #fff;
+}
+a:hover {
+  color: #cd4d36;
+}
+
+/* button */
+.btnBlack {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  font-weight: bold;
+}
+.btnBlack:hover {
+  background-color: #cd4d36;
+  color: #fff;
+}
+
+/* globalnav */
+.globalnav {
+  padding: 20px 40px 20px 40px;
+  display: inline-flex;
+}
+.navLogo {
+  position: relative;
+  z-index: 10;
+}
+.navMenus {
+  position: absolute;
+  right: 40px;
+  display: inline-flex;
+  padding: 20px;
+  margin-bottom: 20px;
+  z-index: 20;
+  background-color: #1b1f23;
+}
+.navMenu {
+  margin: 0 10px;
+}
+
+/* headertop */
+.headertop {
+  background-image: url(../IMG/restaurant.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 870px;
+  box-sizing: border-box;
+}
+.headertop h1 {
+  padding: 300px 0 20px 50px;
+  line-height: 70px;
+}
+.headertop p {
+  padding-left: 50px;
+  color: #ffffff;
+  font-family: "こぶりなゴシック W6 JIS2004";
+  font-size: 16px;
+  font-weight: 800;
+  height: auto;
+  line-height: 1.8;
+  margin: 0px 0px 0px 3px;
+  text-align: left;
+  width: auto;
+  max-width: calc(100% - 3px);
+  justify-content: flex-start;
+}
+
+/* section 共通*/
+.section h2 {
+  font-size: 64px;
+  margin: 40px 0;
+  font-weight: bold;
+}
+#concept,
+#bar,
+#shop {
+  margin: auto;
+  text-align: center;
+  width: 500px;
+  max-width: 100%;
+}
+
+/* youtube */
+.toppage__youtube {
+  text-align: center;
+  margin: 130px;
+}
+
+/* concept */
+#concept {
+  margin-bottom: 230px;
+}
+#concept p {
+  text-align: justify;
+  line-height: 25px;
+}
+#concept img {
+  position: absolute;
+  margin: 30px 0 0 100px;
+  z-index: 1;
+}
+.rayout__left img {
+  position: absolute;
+  left: -160px;
+  width: 650px;
+  height: 700px;
+}
+.rayout__right img {
+  position: absolute;
+  right: 0px;
+  width: 350px;
+  /* z-index: -1; */
+}
+#bar {
+  margin: 350px 700px 500px;
+  text-align: left;
+}
+#bar p {
+  margin-bottom: 50px;
+}
+
+/* shop */
+.shop__wrap,
+.topics__wrap {
+  display: flex;
+  margin: 50px;
+}
+.inner {
+  margin: 20px;
+}
+.shop__wrap .inner img {
+  width: 420px;
+}
+.shop__btn {
+  text-align: center;
+}
+
+/* topics */
+#topics h2,
+#access h2,
+#contact h2 {
+  margin-top: 150px;
+  text-align: center;
+}
+.topics__wrap .inner img {
+  width: 300px;
+}
+
+/* party */
+#party {
+  background-image: url(https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-2400x1401_v-frms_webp_db514ccb-726b-4fc8-a384-67ae8f019a14_regular.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 700px;
+  box-sizing: border-box;
+  margin: 100px 30px;
+}
+#party h2,
+#party p {
+  color: #fff;
+  margin-left: 50%;
+}
+#party {
+  padding-top: 110px;
+}
+
+/* access */
+.map {
+  text-align: center;
+}
+.access__wrap {
+  width: 50%;
+  margin: 70px auto;
+}
+.access__wrap .inner {
+  display: flex;
+  margin: 30px;
+}
+.access__wrap .inner p {
+  margin-right: 45px;
+  font-size: 14px;
+}
+.btn {
+  margin-top: 40px;
+}
+.btn .btnBlack {
+  padding: 13px;
+}
+.content {
+  width: 70%;
+}
+
+/* reservation */
+#reservation {
+  width: 45%;
+  margin: 150px 0 0 13%;
+}
+.info__wrap {
+  margin: 30px 0;
+}
+.telNumber {
+  font-size: 50px;
+}
+.sns {
+  display: flex;
+}
+.sns a {
+  display: flex;
+  margin-right: 30px;
+}
+.size {
+  margin-right: 10px;
+  font-size: 24px;
+}
+.reservation__right img {
+  width: 600px;
+}
+.reservation__left img {
+  width: 435px;
+}
+
+/* contact */
+#contact {
+  z-index: 1;
+  margin-top: 350px;
+  margin: 350px auto 100px auto;
+  width: min-content;
+}
+#contact p {
+  margin-bottom: 30px;
+}
+.question {
+  background-color: #f1f1f1;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 35px 60px;
+}
+.q__wrap {
+  display: flex;
+}
+.q__wrap .small {
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+.q {
+  margin-right: 15px;
+  font-weight: bold;
+}
+.horizontalLine {
+  background: #eeeeee;
+  flex: none;
+  height: 1px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* footer */
+footer {
+  padding: 40px 0;
+  display: flex;
+}
+.footer__left {
+  margin-left: 5%;
+}
+.footer__left .text {
+  margin-bottom: 30px;
+}
+.footer__left .sns {
+  margin: 20px 0 45px 0px;
+}
+.footer__right {
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 10%;
+}
+
+/* ページトップボタン */
+.pagetop {
+  position: fixed;
+  right: 15px;
+  bottom: 60px;
+}
+.pagetop a {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  line-height: 50px;
+  padding: 3px;
+  padding-top: 10px;
+}
+.copy {
+  padding-top: 30px;
+}
