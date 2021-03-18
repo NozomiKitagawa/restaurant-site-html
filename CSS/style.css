@@ -532,12 +532,38 @@ footer {
   line-height: 220px;
   color: #fff;
 }
+.page{
+  text-align: center;
+  margin: auto;
+}
+.page h2{
+  font-size: 30px;
+}
+.page table{
+  margin: auto;
+}
+.page table tr th{
+  background: #c4c4c4;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    width: 160px;
+    text-align: left;
+    padding: 10px 20px;
+}
+.page table tr td{
+  background: #f6f6f6;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 10px 20px;
+}
 
 /* パンくずリスト */
 .breadcrumb {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin: 30px;
+  font-size: 13px;
 }
 .breadcrumb li {
   display: inline;/*横に並ぶように*/
