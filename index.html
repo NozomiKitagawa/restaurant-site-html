@@ -1,153 +1,198 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe-html</title>
+    <title>Cafe-html版</title>
     <link rel="stylesheet" href="./CSS/style.css">
-
+    <link rel="stylesheet" href="./CSS/responsibe.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Benne&family=Lora&family=Merriweather&family=Newsreader&family=Roboto+Slab&display=swap" rel="stylesheet"> -->
-
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"
-    /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
 </head>
+
 <body>
     <div class="overflow">
         <header>
             <div class="globalnav">
                 <div class="navLogo">
-                    <a href="#"><img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-125x47_dcc66c8b-0613-42b6-9fa2-fe529b02b4f0.svg" alt="cafe logo"></a>
+                    <a href="#"><img src="./IMG/tree-logo.png" alt="cafe logo"></a>
                 </div>
                 <div class="navMenus">
                     <div class="navMenu">
-                        <a href="" class="text">コンセプト</a>
+                        <a href="#concept" class="text">コンセプト</a>
                     </div>
                     <div class="navMenu">
-                        <a href="" class="text">レストラン&バー</a>
+                        <a href="#menu" class="text">メニュー</a>
                     </div>
                     <div class="navMenu">
-                        <a href="" class="text">テイクアウト</a>
+                        <a href="#seasonal" class="text">季節のおすすめ</a>
                     </div>
                     <div class="navMenu">
-                        <a href="" class="text">季節のおすすめ</a>
+                        <a href="#event" class="text">イベント</a>
                     </div>
                     <div class="navMenu">
-                        <a href="" class="text">パーティ&貸し切り</a>
+                        <a href="#access" class="text">アクセス</a>
                     </div>
                     <div class="navMenu">
-                        <a href="" class="text">アクセス</a>
+                        <a href="#reservation" class="text">ご予約</a>
                     </div>
                     <div class="navMenu">
-                        <a href="" class="text">ご予約</a>
-                    </div>
-                    <div class="navMenu">
-                        <a href="" class="btnBlack">お問い合わせ</a>
+                        <a href="#contact" class="btnBlack">お問い合わせ</a>
                     </div>
                 </div>
+                <!-- ハンバーガーメニュー(スマホ・タブレット) -->
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- クリックでオープンするメニューバー -->
+                <div class="nav-wrapper">
+                    <ul>
+                        <li>
+                            <a href="#concept" class="text">コンセプト</a>
+                        </li>
+                        <li>
+                            <a href="#menu" class="text">メニュー</a>
+                        </li>
+                        <li>
+                            <a href="#seasonal" class="text">季節のおすすめ</a>
+                        </li>
+                        <li>
+                            <a href="#event" class="text">イベント</a>
+                        </li>
+                        <li>
+                            <a href="#access" class="text">アクセス</a>
+                        </li>
+                        <li>
+                            <a href="#reservation" class="text">ご予約</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="btnBlack">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
             <div class="headertop">
                 <h1 class="large white">
-                RESTAURANT<br>
-                & BAR
+                    RESTAURANT<br>
+                    & BAR
                 </h1>
                 <p class="white">
-                何でもない日が、特別な日に変わる   
+                    何でもない日が、特別な日に変わる
                 </p>
             </div>
         </header>
         <main>
-            
-            <div class="section toppage__youtube">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/CoAvaYOwm6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="rayout__right">
-                <img src="./IMG/edit-plate2.png" alt="">
+            <div class="toppage__youtube">
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/CoAvaYOwm6k" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <div class="section" id="concept">
-                <h2>CONCEPT</h2>
-                <p>
-                    世界で最も装飾されたシェフとは?どうやって評価するのでしょう?ミシュランの星の数で言えば、フランスのジョエル・ロブションだと言えるでしょう。もちろん、彼はこれらすべてのレストランで料理をしているわけではなく、彼のレストラン帝国にはそれほど興味がありません。<br><br>
-                    私はここでは、ちょっと言い過ぎかもしれませんが、デンマークのレストラン「ゼラニウム」のラスムス・コフォエドは、世界で最も装飾されたシェフの称号を得るには最高の資格があると思います。<br><br>
-                    今年、ラスムス・コフォエドとソーレン・レデットは、デンマークで初めてミシュランの3つ星を獲得しました。二人の共同経営者は共にゼラニウムで働いており、レデットはワインとレストランのディレクターとして、コフォエドは料理長として活躍しています。彼らの新しい北欧の高級レストランは、現在、The World's 50,000の28位にランクインしています。
-                </p>
-                <img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-121x52_62274a0a-a08f-4e45-930b-9bd68a0e76fc.svg" alt="">
-            </div>   
-            
+                <div class="concept__wrap">
+                    <h2>CONCEPT</h2>
+                    <p class="bold">
+                        世界で最も装飾されたシェフとは?どうやって評価するのでしょう?ミシュランの星の数で言えば、フランスのジョエル・ロブションだと言えるでしょう。もちろん、彼はこれらすべてのレストランで料理をしているわけではなく、彼のレストラン帝国にはそれほど興味がありません。<br><br>
+                        私はここでは、ちょっと言い過ぎかもしれませんが、デンマークのレストラン「ゼラニウム」のラスムス・コフォエドは、世界で最も装飾されたシェフの称号を得るには最高の資格があると思います。<br><br>
+                        今年、ラスムス・コフォエドとソーレン・レデットは、デンマークで初めてミシュランの3つ星を獲得しました。二人の共同経営者は共にゼラニウムで働いており、レデットはワインとレストランのディレクターとして、コフォエドは料理長として活躍しています。彼らの新しい北欧の高級レストランは、現在、The
+                        World's 50,000の28位にランクインしています。
+                    </p>
+                </div>
+
+            </div>
             <div class="rayout__left">
-                <img src="./IMG/edit-plate3.jpg" alt="">
+                <img src="./IMG/restaurant-left.jpg" alt="">
             </div>
-            <div class="section" id="bar">
-                <h2>
-                RESTAURANT<br>
-                & BAR 
-                </h2>
-                <p>お食事は、青森県産の旬の食材を中心に、各々が異なるシーンで楽しんでいただくため、ファミリーレストランのように、バリエーション豊かにし、少しでもお腹いっぱいになるようなメニューをご用意いたしました。</p>
-                <a href="" class="btnBlack">メニューを見る（PDF）>></a>
+            <div class="section" id="menu">
+                <h2>MENU</h2>
+                <p>コロナウイルス（COVID-19）が世界を席巻し、私たちの日常生活を完全に変えてしまいました。外食産業はこの危機によって最も厳しい打撃を受けている一つであり、私たちは今、地元のレストランをサポートしなければ、これがすべて終わったときに、彼らは周りにいないかもしれません。
+                </p>
+                <a href="" class="btnBlack">メニューを見る >></a>
             </div>
-            <div class="section" id="shop">
-                <h2>SHOP</h2>
-                <p>シードル工房をのぞみ、カフェとともに展開するミュージアムショップエリアには、展覧会グッズはもちろん、弘前ならではの伝統文化から現代美術まで楽しめる書籍・グッズ、アーティストとのコラボレーションアイテム、限定オリジナルスイーツまで、豊富なラインナップを展開します。</p>
+            <div class="section" id="seasonal">
+                <h2>SEASONAL</h2>
+                <p>デンマークのコペンハーゲンにあるミシュラン3つ星レストラン「ゼラニウム」での食事を体験してみませんか。シェフのラスムス・コフォードは、ボキューズ・ドールでブロンズ、シルバー、ゴールドを獲得した世界で最も装飾の施されたシェフです。彼の現代的な北欧料理のテイスティングメニューは、一口一口が食用美術品のような20種類以上の料理で構成されています。
+                </p>
             </div>
-            <div class="shop__wrap">
+            <div class="seasonal__wrap">
                 <div class="inner">
-                    <img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-1062x708_v-fs_webp_7706ab79-2f51-48d9-9844-a73abb948822_small.webp" alt="">
-                    <h3 class="text">A-FACTORY 弘前吉野町シードル工房のシードルが飲める!</h3>
-                    <p>りんごの種類、季節ごとに変わる、限定シードルの数々が本工房の特徴。初めて挑戦する「タンク内二次発酵」製法で醸造されたシードルは飲みやすく評判です。</p>
+                    <img class="img" src="./IMG/fun.jpg" alt="">
+                    <h3 class="text inner-title">素晴らしい料理が食べられる場所のガイドをチェック</h3>
+                    <p class="inner-content">
+                        LYSTはデンマークのヴェーレにあり、コペンハーゲンから電車で2時間で行くことができます。レストランは、港に面した素晴らしい建築物であるフィヨルデンハスの中にあります。</p>
                 </div>
                 <div class="inner">
-                    <img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-1062x708_v-fs_webp_df761782-0727-4aab-adf7-3fe2b41ca62c_small.webp" alt="">
-                    <h3 class="text">限定オリジナルスイーツをご用意しております</h3>
-                    <p>弘前の銘菓「ラグノオ ささき」と BRICK との コラボ菓子が登場。一本5切れで食べやすく提供！キャラメル味のチョコレートとラズベリー のジャムを混ぜ込み、しっとりと焼き上げた濃厚チョコレートケーキです。</p>
+                    <img class="img" src="./IMG/cocktail.jpg" alt="">
+                    <h3 class="text inner-title">持続可能なシーフードに特化したレストラン</h3>
+                    <p class="inner-content">ヘッドシェフのダニエル・マクバーニーは、季節や天候によってほぼ毎日変わるユニークなテイスティングメニューを作っています。</p>
                 </div>
                 <div class="inner">
-                    <img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-1062x708_v-fs_webp_103bc302-aa26-459d-96da-51e351c6e64e_small.webp" alt="">
-                    <h3 class="text">ミュージアムショップならではのオリジナルグッズ</h3>
-                    <p>美術館ロゴが配されたオリジナルバッグや書 籍・グッズ、そして建築家・田根剛氏、写真家・ 畠山直哉氏とのコラボレーションアイテムなど を扱っております。</p>
+                    <img class="img" src="./IMG/dinner.jpg" alt="">
+                    <h3 class="text inner-title">コロナウイルスに対応した「イルカ・アット・ホーム」</h3>
+                    <p class="inner-content">メニューの大部分はシーフードで構成されており、持続可能性を重視しています。食材はすべて半径100マイル以内のものを使用しています。</p>
                 </div>
             </div>
-            <div class="shop__btn">
-                <a href="" class="btnBlack">オンラインショップを見る >></a>
+            <div class="seasonal__btn">
+                <a href="" class="btnBlack">季節のメニューを見る >></a>
             </div>
-            <div class="section" id="topics">
-                <h2>TOPICS</h2>
-                <div class="topics__wrap">
+            <div class="section" id="event">
+                <h2>EVENTS</h2>
+                <div class="event__wrap">
                     <div class="inner">
-                        <img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-1040x692_v-fs_webp_76ad7217-55da-4414-8459-12f7cf8df33d_small.webp" alt="">
+                        <img class="img" src="./IMG/fresh.jpg" alt="">
                         <div class="day">2021.01.20</div>
-                        <h3>公式オンラインショップはじめました！</h3>
-                        <p>弘前れんが倉庫美術館ミュージアムショップで取り扱う商品を一部オンラインにて、お客様へ安全にお届けできるようにいたしました。ぜひ、ご覧・ご利用くださいませ。</p><br>
-                        <a href="" class="text">ONLINE SHOP >></a>
+                        <h3 class="inner-title">食と自然を愛する人たちに人気の観光地</h3>
+                        <p class="inner-content">驚き、そして喜びを同時に味わう準備をしましょう。コペンハーゲンのレストラン アルケミストは、特別な食事をお届けします。</p>
                     </div>
                     <div class="inner">
-                        <img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-1040x692_v-fs_webp_57c4c82d-1dd9-4099-92ac-4b9126457243_small.webp" alt="">
+                        <img class="img" src="./IMG/cool.jpg" alt="">
                         <div class="day">2021.01.07</div>
-                        <h3>カフェ営業時間変更のお知らせ！</h3>
-                        <p>1月13日より期間限定にてカフェの営業時間を変更させていただきます。何卒ご了承のほどお願い申し上げます。<br>
-                            ●平日：11:00～22:00（L.O. 21:00）<br>
-                            ●土日祝日：変更なし<br>
-                            なおショップに限り、営業時間に変更はございません
-                        </p><br>
-                        <a href="" class="text">MORE >></a>
+                        <h3 class="inner-title">滝、渓谷、山、パフィン、灯台など息をのむような景色が広がる</h3>
+                        <p class="inner-content">
+                            海には世界でも有数の美味しい魚が泳いでいます。私たちのように目的地で食事をする人なら、フェロー諸島を訪れる主な理由は、おそらくレストラン「コックス」で食事をすることでしょう。
+                        </p>
+
                     </div>
                     <div class="inner">
-                        <img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-1040x692_v-fs_webp_285f0b12-54a1-49ab-9835-b9d15ddec01f_small.webp" alt="">
+                        <img class="img" src="./IMG/relax.jpg" alt="">
                         <div class="day">2020.11.21</div>
-                        <h3>小沢剛展 期間限定メニューがスタート！</h3>
-                        <p>古くから冬の風物詩として親しまれている「鴨鍋」料理をBRICK風にアレンジした「津軽かもロースの低温調理 つがるロマン玄米 ハーブのソース（¥1,800+tax)」がスタート！展覧会期間中の限定メニューとなります。</p>
+                        <h3 class="inner-title">手つかずの自然の楽園を楽しむ</h3>
+                        <p class="inner-content">料理長のラスマス・ムンクは、日本と東南アジアからインスピレーションを得て、45コースのロングテイスティングメニューを提供しています。</p>
                     </div>
                     <div class="inner">
-                        <img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-1040x692_v-fs_webp_6bdc08af-5246-4697-81a0-2193461056e6_small.webp" alt="">
+                        <img class="img" src="./IMG/glasses.jpg" alt="">
                         <div class="day">2020.11.21</div>
-                        <h3>りんごの形をしたアップルパイが登場！</h3>
-                        <p>弘前「オステリア ダサスィーノ」笹森シェフ監修、りんごの形をした南部鉄器で焼き上げたアップルパイ「HIROSAKI BRICK APPLE PIE」の販売を開始します。フランベしたカルバドス（りんごの蒸留酒）で仕上げた香り高い特製スイーツです！いよいよアップルパイの季節です！</p>  
+                        <h3 class="inner-title">世界のベストレストラン50に選ばれました</h3>
+                        <p class="inner-content">
+                            世界で最も有名なレストランを経営する芸術的なシェフ、マッシモ・ボッタゥーラの手による非日常的なディナーをご体験ください。イタリアのモデナにある「オステリア・フランチェスカーナ」。同店はミシュランの3つ星を保持しており、2016年には世界のベストレストラン50に選ばれました。
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="section" id="party">
+            <!-- モーダルウィンドウ -->
+            <div class="modal">
+                <div class="modal-bg"></div>
+                <div class="modal-window">
+                    <div class="modal-article">
+                        <div class="modal-image">
+                            <img class="modal-img" />
+                        </div>
+                        <div class="modal-container">
+                            <h2 class="modal-title"></h2>
+                            <div class="modal-content"></div>
+                        </div>
+                    </div>
+                    <div class="modal-close-btn">
+                        CLOSE
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="section" id="party">
                 <h2>WEDDING & <br>
                     PARTY</h2>
                 <p>ワンフロアでゲストと楽しむレストランウエディングは１日１組限定。<br>
@@ -159,28 +204,30 @@
                     
                     <a href="" class="white">Instagram @moon_wed_hirorin</a> <br>
                     よりアクセス、または各ブライダル会社へご相談ください</p>
-            </div>
+            </div> -->
             <div class="section" id="access">
                 <h2>ACCESS</h2>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6058.85098407476!2d140.472716!3d40.598435!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x83cd4b05ab2adcb8!2zQ0FGRSAmIFJFU1RBVVJBTlQgQlJJQ0so44Kr44OV44Kn77yG44Os44K544OI44Op44OzIOODluODquODg-OCryk!5e0!3m2!1sja!2sjp!4v1612364030723!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96613.44054824566!2d140.67006805820316!3d40.82422910000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9b9f1cfaf00001%3A0xa234158869b17399!2z6Z2S5qOu55yM5bqB!5e0!3m2!1sja!2sjp!4v1614853446581!5m2!1sja!2sjp"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="access__wrap">
-                    <div class="inner">
+                    <div class="block">
                         <div class="content">
-                            <p>〒036-8188 青森県弘前市吉野町 2-11<br>
-                            弘前れんが倉庫美術館 カフェ・ショップ棟<br><br>
-                            
-                            ＊JR「弘前駅」から、土手町循環バス「中土手町」より徒歩3分
+                            <h3>所在地</h3>
+                            <p>〒000-0000 青森県青森市00-00<br>
+                                Restaurant＆Bar<br><br>
+                                ＊JR「青森駅」から徒歩3分
                             </p>
                         </div>
                         <div class="btn">
                             <a href="" class="btnBlack">googleマップを見る　>></a>
                         </div>
                     </div>
-                    <div class="inner">
+                    <div class="block">
                         <div class="content">
-                            <h3>駐車場について</h3>
+                            <h3>駐車場</h3>
                             <p>敷地内には一般駐車場はございません。<br>
                                 お車でお越しの際は近隣の有料駐車場をご利用ください。
                             </p>
@@ -192,114 +239,125 @@
                 </div>
             </div>
             <div class="rayout__right reservation__right">
-                    <img src="./IMG/plate2.png" alt="">
+                <img src="./IMG/wine-glass.jpg" alt="">
             </div>
             <div class="section" id="reservation">
                 <h2>RESERVATION</h2>
-                
-                <h3>カフェ&レストランへのご予約について</h3>
+
+                <h3>レストラン&バーのご予約について</h3>
                 <p>ご予約は、お電話・各種SNSから承っております。
                     テイクアウト・各種宴会・パーティなど、ご相談もお気軽にお問い合わせください。
                 </p>
                 <div class="info__wrap">
                     <p>TEL</p>
-                    <p class="telNumber text">0172-40-2775</p>
+                    <p class="telNumber text">017-000-0000</p>
                     <div class="sns">
                         <a href="">
-                            <i class="fab fa-facebook-square size"></i>
-                            <p>FACEBOOK</p>
+                            <i class="fab fa-facebook-square size site-color"></i>
+                            <p class="site-color">FACEBOOK</p>
                         </a>
                         <a href="">
-                            <i class="fab fa-instagram size"></i>
-                            <p>INSTAGRAM</p>
+                            <i class="fab fa-instagram size site-color"></i>
+                            <p class="site-color">INSTAGRAM</p>
                         </a>
                     </div>
                 </div>
-                <p>営業時間：カフェ・ショップともに 9:00-22:00 ( L.O 21:00 )<br>
-                    定休日：火曜日、その他、美術館の休館に準じる</p>
-                
-                <div class="rayout__left reservation__left">
-                    <img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-1557x1533_v-fms_webp_dd194d21-b7c6-49b7-b3a1-2d28925e998a_middle.webp" alt="">
-                </div>   
+                <p>営業時間：Restaurant＆Bar共に 17:00-23:00 ( L.O 22:30 )<br>定休日：なし</p>
+
+                <!-- <div class="rayout__left reservation__left">
+                    <img src="./IMG/edit-plate1.png" alt="">
+                </div>    -->
             </div>
             <div class="section" id="contact">
                 <h2>CONTACT</h2>
                 <p>&nbsp;&nbsp;その他のお問い合わせについては、下記のGoogleフォームに内容をご入力の上、<br>「送信」ボタンをクリックしてください。担当より折り返しご連絡させていただきます。</p>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3N_OUCwC7Fl-KAfKGO2PoPIY9wlFRhCowNCi6zl7hWR2n9A/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf3N_OUCwC7Fl-KAfKGO2PoPIY9wlFRhCowNCi6zl7hWR2n9A/viewform?embedded=true"
+                    width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
             </div>
             <div class="question">
                 <h3>【&nbsp;よくあるご質問&nbsp;】</h3>
-                    <div class="q__wrap">
-                        <p class="q">Q</p>
-                        <p class="text">館内の撮影は可能ですか？</p>
-                    </div>
-                    <div class="q__wrap">
-                        <p class="q">A</p>
-                        <p class="small">はい、可能です。取材など媒体などに掲載する場合は、美術館にお問い合わせください。</p>
-                    </div>
-                    <div class="q__wrap">
-                        <p class="q">Q</p>
-                        <p class="text">館内の撮影は可能ですか？</p>
-                    </div>
-                    <div class="q__wrap">
-                        <p class="q">A</p>
-                        <p class="small">はい、可能です。取材など媒体などに掲載する場合は、美術館にお問い合わせください。</p>
-                    </div>
-                    <div class="q__wrap">
-                        <p class="q">Q</p>
-                        <p class="text">館内の撮影は可能ですか？</p>
-                    </div>
-                    <div class="q__wrap">
-                        <p class="q">A</p>
-                        <p class="small">はい、可能です。取材など媒体などに掲載する場合は、美術館にお問い合わせください。</p>
-                    </div>
-                    <div class="q__wrap">
-                        <p class="q">Q</p>
-                        <p class="text">館内の撮影は可能ですか？</p>
-                    </div>
-                    <div class="q__wrap">
-                        <p class="q">A</p>
-                        <p class="small">はい、可能です。取材など媒体などに掲載する場合は、美術館にお問い合わせください。</p>
-                    </div>  
+                <div class="q__wrap">
+                    <p class="q">Q</p>
+                    <p class="text">貸し切りはできますか?</p>
+                </div>
+                <div class="q__wrap">
+                    <p class="q">A</p>
+                    <p class="small">はい、可能です。パーティ&宴会もできますので、お気軽にお問い合わせください。</p>
+                </div>
+                <div class="q__wrap">
+                    <p class="q">Q</p>
+                    <p class="text">店内の撮影は可能ですか?</p>
+                </div>
+                <div class="q__wrap">
+                    <p class="q">A</p>
+                    <p class="small">はい、可能です。SNSなどでシェアして頂けると嬉しいです。</p>
+                </div>
+                <div class="q__wrap">
+                    <p class="q">Q</p>
+                    <p class="text">駐車場はありますか?</p>
+                </div>
+                <div class="q__wrap">
+                    <p class="q">A</p>
+                    <p class="small">駐車場はございません。お車でお越しの際は近隣の有料駐車場をご利用ください。</p>
+                </div>
+                <div class="q__wrap">
+                    <p class="q">Q</p>
+                    <p class="text">食品アレルギーがあるのですが?</p>
+                </div>
+                <div class="q__wrap">
+                    <p class="q">A</p>
+                    <p class="small">出来る限り対応いたしますので、ご予約の際お気軽にお申し付けください。</p>
                 </div>
             </div>
-        </main>
-        <div class="horizontalLine"></div>
-        <footer>
-            <div class="pagetop">
+    </div>
+    </main>
+    <div class="horizontalLine"></div>
+    <footer>
+        <div class="pagetop">
             <a href="#">
-            <img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-60x32_abf667f9-de35-41f3-819d-aec71ab2c700.svg" alt="">
+                <img src="https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-60x32_abf667f9-de35-41f3-819d-aec71ab2c700.svg"
+                    alt="">
             </a>
+        </div>
+        <div class="footer__left">
+            <h1 class="white bold">RESTAURANT & BAR</h1>
+            <p class="white bold">〒000-0000 青森県青森市00-00<br>
+                TEL : 017-000-0000<br>
+                営業時間：Restaurant＆Bar共に 17:00-23:00 ( L.O 22:30 )<br>
+                定休日：なし</p>
+            </p>
+            <div class="sns">
+                <a href="">
+                    <i class="fab fa-facebook-square size site-color"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram size site-color"></i>
+                </a>
             </div>
-            <div class="footer__left">
-                <p class="text">CAFE & RESTAURANT BRICK<br>
-                MUSEUM SHOP HIROSAKI MOCA</p>
-                <p class="small">〒036-8188 青森県弘前市吉野町2-11 弘前れんが倉庫美術館 カフェ・ショップ棟<br>
-                    TEL : 0172-40-2775<br>
-                    営業時間：カフェ&レストラン 9:00-22:00 ( L.O 21:00 ) ショップ 9:00-22:00<br>
-                    定休日：火曜日、その他、美術館の休館に準じる
-                </p>
-                <div class="sns">
-                    <a href="">
-                        <i class="fab fa-facebook-square size"></i>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-instagram size"></i>
-                    </a>
-                </div>
-                <a href="" class="text small">RECRUIT</a>&nbsp;&nbsp;
-                <a href="" class="text small">COMPANY</a>
-            </div>
-            <div class="footer__right">
-                <p class="small text">弘前れんが倉庫美術館については&nbsp;
-                    <a href="">こちら</a>
-                </p>
-                <p class="small copy">Copyright &copy; 2020 HirosakiBRICK Co., Ltd. All rights reserved.</p>
-            </div>
-        </footer>
-        <!-- jQuery読み込み -->
-        <!-- <script src="./index.js"></script> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    </div>  
+        </div>
+        <div class="footer__center">
+            <p class="footer__line">CATEGORY</p>
+            <p><a href="" class="site-color bold">コンセプト</a></p>
+            <p><a href="" class="white bold">メニュー</a></p>
+            <p><a href="" class="white bold">季節のおすすめ</a></p>
+            <p><a href="" class="white bold">イベント</a></p>
+            <p><a href="" class="white bold">アクセス</a></p>
+            <p><a href="" class="white bold">ご予約</a></p>
+            <p><a href="" class="white bold">お問い合わせ</a></p>
+        </div>
+        <div class="footer__right">
+            <p class="footer__line">ABOUT</p>
+            <p><a href="" class="site-color  bold">会社概要</a></p>
+            <p><a href="" class="white bold">採用情報</a></p>
+            <p class="small copy white">Copyright &copy; 2021
+                Restaurant & BAR All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    </div>
 </body>
+
 </html>

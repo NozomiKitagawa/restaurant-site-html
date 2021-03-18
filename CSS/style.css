@@ -4,19 +4,20 @@
   border: 0;
   list-style: none;
   font-family: "Open Sans", sans-serif;
+  font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;
   line-height: 1;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   /* transition: 0.3s cubic-bezier(0.4, 0.4, 0, 1); */
-  color: #fff;
+  color: #333;
   word-spacing: 1px;
   /* -webkit-backface-visibility: hidden; */
 }
 
 .overflow {
-  overflow: hidden;
-  background-color: #1b1f23;
+  overflow: auto;
+  background-color: #fff;
 }
 img {
   box-sizing: border-box;
@@ -28,6 +29,7 @@ h3 {
 p {
   font-size: 16px;
   line-height: initial;
+  margin: 5px 0;
 }
 .text {
   font-weight: bold;
@@ -41,30 +43,107 @@ p {
 .white {
   color: #fff;
 }
+.site-color{
+  color: #9a6b64;
+}
+.site-color:hover{
+  color: #cbaeaa;
+}
+.bold{
+  font-weight: bold;
+}
 a:hover {
-  color: #cd4d36;
+  color: #cbaeaa;
+}
+/* ハンバーガーメニュー */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 30px 0 82%;
+}
+span {
+  display: block;
+  height: 6px;
+  width: 60px;
+  margin: 5px 10px;
+  border-radius: 2px;
+  background-color: black;
+}
+/* ハンバーガーメニューの中身 */
+.nav-wrapper {
+  position: fixed;
+  top: 88px;
+  right: -200px;
+  height: 74%;
+  width: 200px;
+  background-color: #9a6b64;
+  transition: 300ms;
+  color: #fff;
+}
+.nav-wrapper.open {
+  right: 0;
+}
+.nav-wrapper.open ul {
+  margin: 0;
+  padding: 0;
+}
+.nav-wrapper.open li {
+  list-style: none;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  margin: 10%;
+}
+.nav-wrapper.open a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.nav-wrapper.open a:hover {
+  background-color: white;
+  color: black;
+}
+.open0.open {
+  transform: translateY(10px) rotate(-45deg);
+}
+.open1.open {
+  opacity: 0;
+}
+.open2.open {
+  transform: translateY(-20px) rotate(45deg);
 }
 
 /* button */
 .btnBlack {
-  background-color: #000;
+  background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 15px 33px;
   font-weight: bold;
 }
 .btnBlack:hover {
-  background-color: #cd4d36;
+  background-color: #9a6b64;
   color: #fff;
 }
 
 /* globalnav */
 .globalnav {
-  padding: 20px 40px 20px 40px;
+  padding: 10px 50px;
   display: inline-flex;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
 }
 .navLogo {
   position: relative;
   z-index: 10;
+}
+.navLogo a img {
+  width: 50px;
 }
 .navMenus {
   position: absolute;
@@ -73,7 +152,7 @@ a:hover {
   padding: 20px;
   margin-bottom: 20px;
   z-index: 20;
-  background-color: #1b1f23;
+  background-color: #fff;
 }
 .navMenu {
   margin: 0 10px;
@@ -113,8 +192,8 @@ a:hover {
   font-weight: bold;
 }
 #concept,
-#bar,
-#shop {
+#menu,
+#seasonal {
   margin: auto;
   text-align: center;
   width: 500px;
@@ -124,12 +203,22 @@ a:hover {
 /* youtube */
 .toppage__youtube {
   text-align: center;
-  margin: 130px;
+  margin: 100px 0;
 }
 
 /* concept */
 #concept {
-  margin-bottom: 230px;
+  width: 100%;
+  margin-bottom: 150px;
+  padding: 100px 0;
+  background-image: url(../IMG/bgi-marble.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.concept__wrap{
+  width: 33%;
+  margin: auto;
 }
 #concept p {
   text-align: justify;
@@ -142,8 +231,6 @@ a:hover {
 }
 .rayout__left img {
   position: absolute;
-  left: -160px;
-  width: 650px;
   height: 700px;
 }
 .rayout__right img {
@@ -152,43 +239,112 @@ a:hover {
   width: 350px;
   /* z-index: -1; */
 }
-#bar {
-  margin: 350px 700px 500px;
+#menu {
+  margin: 350px 700px;
   text-align: left;
 }
-#bar p {
+#menu p {
   margin-bottom: 50px;
 }
 
-/* shop */
-.shop__wrap,
-.topics__wrap {
+/* seasonal */
+.seasonal__wrap,
+.event__wrap {
   display: flex;
   margin: 50px;
+  overflow: auto;
 }
 .inner {
   margin: 20px;
+  border: 1px solid black;
+  padding: 30px 20px;
+  cursor: pointer;
 }
-.shop__wrap .inner img {
-  width: 420px;
+.inner:hover {
+  opacity: 0.5;
 }
-.shop__btn {
+.seasonal__wrap .inner img {
+  width: 380px;
+}
+.seasonal__btn {
   text-align: center;
 }
 
-/* topics */
-#topics h2,
+/* modal */
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: none;
+}
+.modal.open {
+  display: block;
+}
+.modal-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.modal-window {
+  background-color: white;
+  width: 1200px;
+  height: 80%;
+  margin: 135px auto;
+}
+.modal-article {
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 150px 0;
+}
+.modal-title {
+  margin: 25px 0;
+}
+.modal-image {
+  width: 100%;
+  height: 100%;
+}
+.modal-img {
+  width: 85%;
+}
+.modal-container {
+  width: 100%;
+  margin: 10px;
+}
+.modal-close-btn {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal-close-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* event */
+#event h2,
 #access h2,
 #contact h2 {
   margin-top: 150px;
   text-align: center;
 }
-.topics__wrap .inner img {
-  width: 300px;
+.event__wrap .inner img {
+  width: 270px;
 }
 
 /* party */
-#party {
+/* #party {
   background-image: url(https://storage.googleapis.com/studio-design-assets/projects/moWvEbQga6/s-2400x1401_v-frms_webp_db514ccb-726b-4fc8-a384-67ae8f019a14_regular.webp);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -203,21 +359,21 @@ a:hover {
 }
 #party {
   padding-top: 110px;
-}
+} */
 
 /* access */
 .map {
   text-align: center;
 }
 .access__wrap {
-  width: 50%;
+  width: 60%;
   margin: 70px auto;
 }
-.access__wrap .inner {
+.access__wrap .block {
   display: flex;
   margin: 30px;
 }
-.access__wrap .inner p {
+.access__wrap .block p {
   margin-right: 45px;
   font-size: 14px;
 }
@@ -233,8 +389,8 @@ a:hover {
 
 /* reservation */
 #reservation {
-  width: 45%;
-  margin: 150px 0 0 13%;
+  width: 40%;
+  margin: 200px 0 0 7%;
 }
 .info__wrap {
   margin: 30px 0;
@@ -251,10 +407,11 @@ a:hover {
 }
 .size {
   margin-right: 10px;
-  font-size: 24px;
+  font-size: 30px;
 }
 .reservation__right img {
-  width: 600px;
+  width: 450px;
+  margin-top: 120px;
 }
 .reservation__left img {
   width: 435px;
@@ -271,7 +428,7 @@ a:hover {
   margin-bottom: 30px;
 }
 .question {
-  background-color: #f1f1f1;
+  background-color: rgb(203, 174, 170);
   width: 70%;
   margin: auto;
   margin-bottom: 100px;
@@ -298,11 +455,24 @@ a:hover {
 
 /* footer */
 footer {
-  padding: 40px 0;
+  padding: 150px 0 50px;
   display: flex;
+  background-repeat: no-repeat;
+  background-color: #333;
+  background-blend-mode: overlay;
+  background-image: url(../IMG/relax.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: exclusion;
+  color: #fff;
 }
 .footer__left {
   margin-left: 5%;
+}
+.footer__left h1{
+  margin-bottom: 10%;
 }
 .footer__left .text {
   margin-bottom: 30px;
@@ -310,10 +480,25 @@ footer {
 .footer__left .sns {
   margin: 20px 0 45px 0px;
 }
+.footer__center{
+  margin: 0 0 0 20%;
+}
 .footer__right {
-  margin-left: auto;
-  margin-top: auto;
-  margin-right: 10%;
+  margin: 0 0 0 10%;
+}
+.footer__line{
+  color: white;
+  font-size: 27px;
+  margin-bottom: 40px;
+}
+.footer__line::before{
+  content: "";
+    display: block;
+    width: 13%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    margin-top: -13px;
 }
 
 /* ページトップボタン */
@@ -331,5 +516,5 @@ footer {
   padding-top: 10px;
 }
 .copy {
-  padding-top: 30px;
+  padding-top: 80%;
 }
