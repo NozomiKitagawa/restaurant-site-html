@@ -521,11 +521,16 @@ footer {
 
 /* 固定ページ共通 */
 .pageHeader{
-  background-image: url(../IMG/cocktail.jpg);
+  background-image: url(../IMG/glasses.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 300px;
-  background-blend-mode: exclusion;
+  margin-top: 80px;
+  height: 220px;
+}
+.pageHeader h1{
+  text-align: center;
+  line-height: 220px;
+  color: #fff;
 }
 
 /* パンくずリスト */
