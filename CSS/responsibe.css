@@ -27,6 +27,35 @@
     .toppage__youtube{
         margin: 50px 0 130px;
     }
+    .concept__wrap{
+        width: 70%;
+    }
+    .concept__wrap p{
+        font-size: 20px;
+        font-weight: inherit;
+    }
+    .rayout__left img{
+        height: 500px;
+    }
+    #menu{
+        margin: 170px 420px;
+    }
+    #menu p{
+        width: 60%;
+    }
+    .seasonal__wrap,
+    .event__wrap{
+        display: grid;
+    }
+    .inner{
+        width: 450px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .event__wrap .inner img{
+        width: 380px;
+    }
 }
 
 
