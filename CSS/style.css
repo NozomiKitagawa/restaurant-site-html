@@ -16,7 +16,7 @@
 }
 
 .overflow {
-  overflow:hidden;
+  /* overflow:hidden; */
   background-color: #fff;
 }
 img {
@@ -46,7 +46,6 @@ p {
 .site-color{
   color: #9a6b64;
 }
-
 .site-color:hover{
   color: #cbaeaa;
 }
@@ -56,6 +55,7 @@ p {
 a:hover {
   color: #cbaeaa;
 }
+
 /* ハンバーガーメニュー */
 .nav-toggle {
   display: flex;
@@ -85,6 +85,7 @@ a:hover {
 }
 .nav-wrapper.open {
   right: 0;
+  height: auto;
 }
 .nav-wrapper.open ul {
   margin: 0;
@@ -96,6 +97,7 @@ a:hover {
   text-align: center;
   line-height: 80px;
   margin: 10%;
+  height: 50px;
 }
 .nav-wrapper.open a {
   text-decoration: none;
