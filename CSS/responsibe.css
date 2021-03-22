@@ -256,4 +256,11 @@
         padding-top: 10%;
         font-size: 10px;
     }
+    /* 固定ページ */
+    .large, .section h2 {
+        font-size: 20px;
+    }
+    .page__wrap {
+        display: contents;
+    }
 }

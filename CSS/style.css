@@ -544,6 +544,12 @@ footer {
 .page h2{
   font-size: 30px;
 }
+.page__wrap{
+  display: inline-flex;
+}
+.page__block{
+  margin: 0 25px 50px;
+}
 .page table{
   margin: auto;
 }
