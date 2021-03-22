@@ -145,8 +145,11 @@
     .rayout__right img{
         display: none;
     }
+    #menu, #seasonal {
+        width: 300px;
+    }
     #menu{
-        margin: 0 15%;
+        margin: auto;
         text-align: center;
     }
     #menu p {
@@ -169,15 +172,26 @@
     .event__wrap .inner img {
         width: 100%;
     }
+    .modal-window{
+        margin: 115px auto;
+        height: auto;
+        padding-bottom: 10px;
+    }
     .modal-article{
-        width: 100%;
+        width: 95%;
+        height: auto;
+        padding: 70px 0 0;
+        margin: 10px;
+    }
+    .modal-container {
+        width: 33%;
     }
     .modal-image {
-        margin: 2%;
+        width: 300px;
+        margin: 0 5%;
     }
-    #menu, #seasonal {
-        width: 35%;
-        width: 250px;
+    .modal-close-btn {
+        margin: 20px 12%;
     }
     #event h2{
         margin-top: 100px;
