@@ -14,7 +14,6 @@
   word-spacing: 1px;
   /* -webkit-backface-visibility: hidden; */
 }
-
 .overflow {
   overflow:hidden;
   background-color: #fff;
@@ -54,6 +53,11 @@ p {
 }
 a:hover {
   color: #cbaeaa;
+}
+
+/* スムーズスクロール */
+html{
+  scroll-behavior: smooth;
 }
 
 /* ハンバーガーメニュー */
