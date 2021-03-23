@@ -39,8 +39,6 @@ $(function () {
     });
 });
 
-// aタグをクリックした時にページ遷移のアニメーションを付ける
-
 // 画面が読み込まれた時、is-slideを外し、アニメーションさせる
 $(window).on('load', function () {
     $('body').removeClass('is-slide');
@@ -62,5 +60,23 @@ $(function () {
         }
         return false;
     });
+});
 
+// トップページへのボタン(フェイドして現れる)
+$(function () {
+    var pagetop = $('.pagetop');
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500); //0.5秒かけてトップへ移動
+        return false;
+    });
 });
