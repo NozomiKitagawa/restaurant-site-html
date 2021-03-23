@@ -78,14 +78,14 @@
             </div>
         </header>
         <main>
-            <div class="pageHeader">
+            <div class="pageHeader" id="page-menu">
                 <h1>MENU</h1>
             </div>
             <!-- パンくずリスト -->
             <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <!-- 1つ目 -->
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="ホームのURL">
+                    <a itemprop="item" href="#">
                         <i class="fas fa-home"></i>
                         <span itemprop="name">ホーム</span>
                     </a>
@@ -93,7 +93,7 @@
                 </li>
                 <!-- 2つ目 -->
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="カテゴリー1のURL">
+                    <a itemprop="item" href="./page-menus.html">
                         <span itemprop="name">メニュー</span>
                     </a>
                     <meta itemprop="position" content="2" />
@@ -116,7 +116,7 @@
                 <div class="page__wrap">
                     <div class="page__block">
                         <h3>限定ワイン</h3>
-                        <table>
+                        <table class="three-column">
                             <tr>
                                 <th>フランス</th>
                                 <td>ボトル2500円～</td>
