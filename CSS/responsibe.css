@@ -110,7 +110,7 @@
         display: none;
     }
     .nav-toggle{
-        margin: 0 30px 0 65%;
+        margin: 12px 30px 0 65%;
     }
     .humberger{
         height: 4px;
@@ -257,7 +257,7 @@
         font-size: 10px;
     }
     /* 固定ページ */
-    .large, .section h2 {
+    h2.page-menu {
         font-size: 20px;
     }
     .page__wrap {
