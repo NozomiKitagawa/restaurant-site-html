@@ -70,8 +70,8 @@ html{
 }
 .humberger {
   display: block;
-  height: 6px;
-  width: 60px;
+  height: 4px;
+  width: 50px;
   margin: 5px 10px;
   border-radius: 2px;
   background-color: black;
@@ -82,7 +82,7 @@ html{
   top: 88px;
   right: -200px;
   height: 74%;
-  width: 200px;
+  width: 180px;
   background-color: #9a6b64;
   transition: 300ms;
   color: #fff;
@@ -100,7 +100,7 @@ html{
   height: 80px;
   text-align: center;
   line-height: 80px;
-  margin: 10%;
+  margin: 4%;
   height: 50px;
 }
 .nav-wrapper.open a {
