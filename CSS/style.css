@@ -91,11 +91,11 @@ html{
   right: 0;
   height: 100%;
 }
-.nav-wrapper.open ul {
+.nav-wrapper ul {
   margin: 0;
   padding: 0;
 }
-.nav-wrapper.open li {
+.nav-wrapper li {
   list-style: none;
   height: 80px;
   text-align: center;
@@ -103,7 +103,7 @@ html{
   margin: 4%;
   height: 50px;
 }
-.nav-wrapper.open a {
+.nav-wrapper a {
   text-decoration: none;
   display: block;
   width: 100%;
