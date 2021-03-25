@@ -106,11 +106,17 @@
     .globalnav{
         padding: 10px 25px;
     }
+    .nav-wrapper{
+        top: 75px;
+    }
+    .navLogo a img{
+        width: 40px;
+    }
     .navMenus{
         display: none;
     }
     .nav-toggle{
-        margin: 12px 30px 0 65%;
+        margin: 7px 30px 0 70%;
     }
     .humberger{
         height: 4px;
@@ -139,7 +145,7 @@
         margin-bottom: 70px;
     }
     .concept__wrap p {
-        font-size: 15px;
+        font-size: 18px;
     }
     .rayout__left img,
     .rayout__right img{
