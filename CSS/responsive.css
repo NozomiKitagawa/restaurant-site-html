@@ -68,6 +68,7 @@
     /* 予約 */
     #reservation h2{
         font-size: 45px;
+        margin-top: 0;
     }
     .telNumber{
         font-size: 35px;
@@ -179,6 +180,9 @@
     #seasonal{
         margin-top: 100px;
     }
+    #seasonal h2{
+        margin-top: 0;
+    }
     /* インナー */
     .inner p{
         font-size: 12px;
@@ -235,11 +239,18 @@
     }
     /* 予約 */
     #reservation {
-        width: 75%;
-        margin: 100px 0 0 10%;
+        margin: auto;
+        width: 300px;
+    }
+    #reservation h2{
+        margin-top: 0;
     }
     #reservation p{
         font-size: 14px;
+    }
+    .reservation__wrap{
+        width: 100%;
+        margin: 0 auto;
     }
     .rayout__right img{
         height: 300px;
