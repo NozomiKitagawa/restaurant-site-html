@@ -198,7 +198,9 @@ html{
 }
 
 /* section 共通*/
-.section{
+#seasonal,
+#event,
+#access{
   display: flex;
   flex-direction: column;
 }
@@ -208,7 +210,6 @@ html{
   font-weight: bold;
 }
 #concept,
-#menu,
 #seasonal {
   margin: auto;
   text-align: center;
@@ -233,31 +234,42 @@ html{
   background-size: cover;
 }
 .concept__wrap{
-  width: 33%;
+  width: 50%;
   margin: auto;
 }
 #concept p {
   text-align: justify;
   line-height: 25px;
+  font-size: 20px;
+  font-weight: inherit;
 }
 #concept img {
   position: absolute;
   margin: 30px 0 0 100px;
   z-index: 1;
 }
-.rayout__left img {
-  position: absolute;
-  height: 700px;
+
+/* menu */
+.rayout__left,
+.rayout__right{
+  width: 45%;
+  max-width: 500px;
 }
+.rayout__left img,
 .rayout__right img {
-  position: absolute;
-  right: 0px;
-  width: 350px;
-  /* z-index: -1; */
+  width: 100%;
+  height: auto;
 }
 #menu {
-  margin: 0px 700px 200px;
+  margin: 0px 50px 200px 0px;
   text-align: left;
+  display: flex;
+}
+.menu__wrap{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 #menu p {
   margin-bottom: 50px;
@@ -265,7 +277,6 @@ html{
 #menu h2{
   margin-top: 200px;
 }
-
 /* seasonal */
 #seasonal h2{
   margin-top: 150px;
@@ -273,10 +284,11 @@ html{
 .seasonal__wrap,
 .event__wrap {
   display: flex;
-  margin: 50px;
+  padding: 50px;
   overflow: auto;
 }
 .inner {
+  width: 35%;
   margin: 20px;
   /* border: 1px solid black; */
   padding: 30px 20px;
@@ -288,7 +300,7 @@ html{
   opacity: 0.5;
 }
 .seasonal__wrap .inner img {
-  width: 380px;
+  width: 100%;
 }
 .seasonal__btn {
   text-align: center;
@@ -363,8 +375,11 @@ html{
   margin-top: 150px;
   text-align: center;
 }
+.event__wrap .inner{
+  width: 23%;
+}
 .event__wrap .inner img {
-  width: 260px;
+  width: 100%;
 }
 
 /* party */
@@ -413,8 +428,14 @@ html{
 
 /* reservation */
 #reservation {
-  width: 40%;
-  margin: 50px 0 0 7%;
+  margin-top: 50px;
+  display: flex;
+}
+.reservation__wrap{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 10%;
 }
 #reservation h2{
   margin-top: 150px;
@@ -435,13 +456,6 @@ html{
 .size {
   margin-right: 10px;
   font-size: 30px;
-}
-.reservation__right img {
-  width: 450px;
-  margin-top: 120px;
-}
-.reservation__left img {
-  width: 435px;
 }
 
 /* contact */
