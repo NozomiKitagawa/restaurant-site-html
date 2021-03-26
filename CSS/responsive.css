@@ -156,6 +156,9 @@
     .rayout__right img{
         display: none;
     }
+    .rayout__left{
+        width: 0;
+    }
     #menu, #seasonal {
         width: 300px;
     }
@@ -165,6 +168,12 @@
     }
     #menu p {
         width: 100%;
+    }
+    .menu__wrap{
+        width: 100%;
+    }
+    .btnBlack{
+        margin: auto;
     }
     /* 季節のおすすめ */
     #seasonal{
