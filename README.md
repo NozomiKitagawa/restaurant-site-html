@@ -3,7 +3,7 @@
 飲食店向けのホームページ例です。
 
 【言語】
-HTML,CSS,jQuery
+HTML,CSS,JaveScript,jQuery
 
 【構成】
 ・トップページ
