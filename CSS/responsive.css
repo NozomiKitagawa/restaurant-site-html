@@ -288,6 +288,9 @@
         display: inherit;
         padding: 60px 0 50px;
     }
+.footer__left{
+    margin: 0 14%;
+}
     .footer__left p{
         font-size: 13px;
     }
