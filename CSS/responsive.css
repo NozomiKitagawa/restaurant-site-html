@@ -288,10 +288,6 @@
     footer{
         display: inherit;
         padding: 60px 0 50px;
-        background-attachment: unset;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
     }
     .footer__left{
         margin: 0 14%;
