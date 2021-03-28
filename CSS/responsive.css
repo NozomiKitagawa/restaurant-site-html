@@ -198,12 +198,11 @@
     }
     /* モダル */
     .modal-window{
-        margin: 115px auto;
+        margin: 20% auto;
         height: auto;
         padding-bottom: 10px;
     }
     .modal-article{
-        width: 95%;
         height: auto;
         padding: 70px 0 0;
         margin: 10px;
