@@ -283,7 +283,7 @@ html{
 .seasonal__wrap,
 .event__wrap {
   display: flex;
-  padding: 50px;
+  padding: 15px;
   overflow: auto;
 }
 .inner {
