@@ -109,9 +109,7 @@
     .globalnav{
         padding: 7px 27px;
     }
-    .nav-wrapper{
-        top: 75px;
-    }
+    
     .navLogo a img{
         width: 32px;
     }
@@ -125,6 +123,10 @@
         height: 2px;
         width: 38px;
     }
+    .nav-wrapper{
+        top: 58px;
+    }
+    /* ヘッダートップ */
     .headertop{
         background-size: 100% 80%;
     }
