@@ -15,6 +15,9 @@
     .nav-wrapper .open{
         display: none;
     }
+    .open2.open {
+        transform: translateY(-17px) rotate(45deg);
+    }
     .headertop{
         height: auto;
     }
@@ -123,6 +126,9 @@
     .humberger{
         height: 2px;
         width: 33px;
+    }
+    .open2.open {
+        transform: translateY(-14px) rotate(45deg);
     }
     .nav-wrapper{
         top: 58px;
