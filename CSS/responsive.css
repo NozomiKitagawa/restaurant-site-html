@@ -152,8 +152,8 @@
         margin-bottom: 70px;
         background-repeat: no-repeat;
     }
-    .concept__wrap p {
-        font-size: 18px;
+    #concept p {
+        font-size: 16px;
     }
     /* メニュー */
     .rayout__left img,
