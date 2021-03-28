@@ -504,7 +504,6 @@ footer {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   background-blend-mode: exclusion;
   color: #fff;
 }
