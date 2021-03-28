@@ -107,11 +107,12 @@
     }
     /* ヘッダー */
     .globalnav{
-        padding: 7px 27px;
+        padding: 5px 27px;
     }
     
     .navLogo a img{
         width: 32px;
+        padding-top: 2px;
     }
     .navMenus{
         display: none;
@@ -121,7 +122,7 @@
     }
     .humberger{
         height: 2px;
-        width: 38px;
+        width: 33px;
     }
     .nav-wrapper{
         top: 58px;
