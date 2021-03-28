@@ -245,9 +245,11 @@
     #reservation {
         margin: auto;
         width: 300px;
+        text-align: center;
     }
     #reservation h2{
         margin-top: 0;
+        font-size: 35px;
     }
     #reservation p{
         font-size: 14px;
@@ -255,6 +257,9 @@
     .reservation__wrap{
         width: 100%;
         margin: 0 auto;
+    }
+    .info__wrap p{
+        text-align: left;
     }
     .rayout__right img{
         height: 300px;
