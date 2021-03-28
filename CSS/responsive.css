@@ -150,6 +150,7 @@
         width: 100%;
         padding: 10px 0;
         margin-bottom: 70px;
+        background-repeat: no-repeat;
     }
     .concept__wrap p {
         font-size: 18px;
