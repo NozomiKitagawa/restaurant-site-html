@@ -100,6 +100,10 @@
     .modal-close-btn{
         margin: 20px 28%;
     }
+    /* フッター */
+    footer{
+        background-attachment: inherit;
+    }
 }
 
 /* スマホ 559px以下*/
@@ -291,7 +295,6 @@
     }
     /* フッター */
     footer{
-        display: inherit;
         padding: 60px 0 50px;
     }
     .footer__left{
