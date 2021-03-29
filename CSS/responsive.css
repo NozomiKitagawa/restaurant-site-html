@@ -105,7 +105,7 @@
     }
     /* フッター */
     footer{
-        background-attachment:local;
+        background-attachment:　inherit;
     }
 }
 
