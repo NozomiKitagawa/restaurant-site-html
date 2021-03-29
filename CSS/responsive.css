@@ -4,6 +4,10 @@
     .nav-wrapper{
         display: none;
     }
+    #concept,
+    footer{
+        background-attachment: fixed;
+    }
 }
 
 /* タブレット 560-959px*/
