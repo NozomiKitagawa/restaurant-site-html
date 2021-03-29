@@ -104,6 +104,9 @@
     .modal-close-btn{
         margin: 20px 28%;
     }
+    footer{
+        background-attachment: scroll;
+    }
 }
 
 /* スマホ 559px以下*/
@@ -295,6 +298,7 @@
     footer{
         padding: 60px 0 50px;
         display: block;
+        background-attachment: scroll;
     }
     .footer__left{
         margin: 0 14%;
