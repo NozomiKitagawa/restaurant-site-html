@@ -317,6 +317,9 @@
         font-size: 10px;
     }
     /* スマホ版｜固定ページ */
+    .pageHeader{
+        margin-top: 56px;
+    }
     h2.page-menu {
         font-size: 20px;
     }
