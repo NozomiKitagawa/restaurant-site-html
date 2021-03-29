@@ -4,10 +4,6 @@
     .nav-wrapper{
         display: none;
     }
-    #concept,
-    footer{
-        background-attachment:fixed;
-    }
 }
 
 /* タブレット 560-959px*/
@@ -294,6 +290,7 @@
     /* フッター */
     footer{
         padding: 60px 0 50px;
+        display: block;
     }
     .footer__left{
         margin: 0 14%;
