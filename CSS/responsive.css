@@ -4,6 +4,10 @@
     .nav-wrapper{
         display: none;
     }
+    #concept,
+    footer{
+        background-attachment:fixed;
+    }
 }
 
 /* タブレット 560-959px*/
@@ -32,9 +36,6 @@
         margin: 50px 0 130px;
     }
     /* コンセプト */
-    #concept{
-        background-attachment: inherit;
-    }
     .concept__wrap{
         width: 70%;
     }
@@ -103,10 +104,6 @@
     .modal-close-btn{
         margin: 20px 28%;
     }
-    /* フッター */
-    footer{
-        background-attachment:　inherit;
-    }
 }
 
 /* スマホ 559px以下*/
@@ -119,7 +116,6 @@
     .globalnav{
         padding: 5px 27px;
     }
-    
     .navLogo a img{
         width: 32px;
         padding-top: 2px;
