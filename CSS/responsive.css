@@ -105,7 +105,7 @@
         margin: 20px 28%;
     }
     footer{
-        background-attachment: local;
+        background-attachment: inherit;
     }
 }
 
@@ -298,7 +298,7 @@
     footer{
         padding: 60px 0 50px;
         display: block;
-        background-attachment: local;
+        background-attachment: inherit;
     }
     .footer__left{
         margin: 0 14%;
