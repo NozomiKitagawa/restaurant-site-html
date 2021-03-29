@@ -667,7 +667,7 @@ footer {
 }
 
 /* ページ遷移時のアニメーション */
-#page-animate::before {
+/* #page-animate::before {
   content: '';
   position: fixed;
   top: 0;
@@ -699,10 +699,10 @@ footer {
  }
  #page-animate.is-slide::after {
   left: 0;
- }
+ } */
 
 /* 追加アニメーション */
-/* .loader-wrap {
+.loader-wrap {
 	position: fixed;
 	display: flex;
   align-items: center;
@@ -768,4 +768,4 @@ footer {
   40% {
     box-shadow: 0 2.5em 0 0;
   }
-} */
+}
