@@ -196,6 +196,8 @@ html{
   justify-content: flex-start;
 }
 
+
+
 /* section 共通*/
 #seasonal,
 #event,
@@ -298,9 +300,11 @@ html{
 .inner:hover {
   opacity: 0.5;
 }
+
 .seasonal__wrap .inner img {
   width: 100%;
 }
+  
 .seasonal__btn {
   text-align: center;
 }

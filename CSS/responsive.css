@@ -137,7 +137,7 @@
         transform: translateY(-14px) rotate(45deg);
     }
     .nav-wrapper{
-        top: 56px;
+        top: 57px;
     }
     /* ヘッダートップ */
     .headertop{
@@ -177,7 +177,7 @@
         width: 0;
     }
     #menu, #seasonal {
-        width: 300px;
+        width: 80%;
     }
     #menu{
         margin: auto;
@@ -287,7 +287,7 @@
         font-size: 14px;
     }
     .form{
-        width: 300px;
+        width: auto;
         height: 400px;
     }
     .question{
