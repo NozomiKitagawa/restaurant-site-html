@@ -79,7 +79,7 @@ html{
 /* ハンバーガーメニューの中身 */
 .nav-wrapper {
   position: fixed;
-  top: 88px;
+  top: 78px;
   right: -200px;
   height: 74%;
   width: 180px;
@@ -155,7 +155,7 @@ html{
   z-index: 10;
 }
 .navLogo a img {
-  width: 50px;
+  width: 42px;
 }
 .navMenus {
   position: absolute;
