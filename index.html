@@ -292,9 +292,31 @@
             <div class="section" id="contact">
                 <h2>CONTACT</h2>
                 <p>その他のお問い合わせについては、下記のGoogleフォームに内容をご入力の上、<br>「送信」ボタンをクリックしてください。担当より折り返しご連絡させていただきます。</p>
-                <iframe class="form"
+                <!-- <iframe class="form"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSf3N_OUCwC7Fl-KAfKGO2PoPIY9wlFRhCowNCi6zl7hWR2n9A/viewform?embedded=true"
-                    width="600" height="600" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                    width="600" height="600" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe> -->
+                <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf3N_OUCwC7Fl-KAfKGO2PoPIY9wlFRhCowNCi6zl7hWR2n9A/formResponse">
+                    <p>ご不明な点があれば、お気軽にご連絡くださいませ（最大1,000文字）。</p>
+
+                    <label for="form-detail">・お問い合わせ内容(最大1,000文字)</label>
+                    <p><textarea id="form-detail" name="entry.1310983810" placeholder="ご自由にご記載下さい。"
+                            required=""></textarea></p>
+
+                    <label for="form-name">・お名前（ニックネーム）</label>
+                    <p><input id="form-name" type="text" name="entry.559352220" placeholder="名前だよ" required=""></p>
+
+                    <label for="form-mail">・メールアドレス</label>
+                    <p><input id="form-mail" type="email" name="entry.443565211" placeholder="example@mail.co.jp"
+                            required=""></p>
+
+
+
+
+
+                    <p><button type="submit" name="button" value="送信する">送信する</button></p>
+                </form>
+                <!-- 追加ここまで -->
             </div>
             <div class="question">
                 <h3>【&nbsp;よくあるご質問&nbsp;】</h3>
