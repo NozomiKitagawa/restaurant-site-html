@@ -280,6 +280,7 @@
     /* 問い合わせ */
     #contact {
         margin-top: 0;
+        width: 80%;
     }
     #contact h2{
         margin-top: 70px;
