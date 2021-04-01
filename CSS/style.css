@@ -466,10 +466,10 @@ html{
 
 /* contact */
 #contact {
+  width: 600px;
   z-index: 1;
   margin-top: 350px;
   margin: 200px auto 100px auto;
-  width: min-content;
 }
 #contact p {
   margin-bottom: 30px;
@@ -492,12 +492,29 @@ html{
   margin-right: 15px;
   font-weight: bold;
 }
-.horizontalLine {
-  background: #eeeeee;
-  flex: none;
-  height: 1px;
+input,
+textarea{
+  background-color: #fff;
+  border: 1px solid #cbaeaa;
+  border-radius: 5px;
   width: 100%;
-  max-width: 100%;
+  line-height: 40px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.formBtn{
+  text-align: right;
+}
+.formBtn button{
+  background: #9a6b64;
+  color: #fff;
+  border-radius: 5px;
+  width: 20%;
+  line-height: 40px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  padding-left: 10px;
 }
 
 /* footer */
