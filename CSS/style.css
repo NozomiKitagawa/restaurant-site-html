@@ -504,13 +504,13 @@ textarea{
   padding-left: 10px;
 }
 .formBtn{
-  text-align: right;
+  text-align: center;
 }
 .formBtn button{
   background: #9a6b64;
   color: #fff;
   border-radius: 5px;
-  width: 20%;
+  width: 40%;
   line-height: 40px;
   margin-bottom: 5px;
   font-size: 15px;
